@@ -1,0 +1,54 @@
+/* Container sizing & alignment fix */
+.movie-nav {
+  background-color: #141414 !important;
+  border-bottom: 1px solid #222;
+  padding: 12px 0 !important;
+}
+
+.brand-logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Nav Links */
+.nav-link-custom {
+  color: #e5e5e5 !important;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-link-custom:hover {
+  color: #e50914 !important;
+}
+
+/* Auth Buttons */
+.btn-login {
+  color: #e5e5e5;
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-login:hover {
+  color: #fff;
+}
+
+.btn-signup {
+  background-color: #e50914;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 6px 16px;
+  border: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-signup:hover {
+  background-color: #f40612;
+  color: #fff;
+}

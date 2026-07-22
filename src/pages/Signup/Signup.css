@@ -1,0 +1,4 @@
+.signup-page-wrapper {
+  background-color: #0f1117; /* نفس خلفية باقي الأبلكيشن السينمائية */
+  min-height: calc(100vh - 120px); /* يملأ الشاشة بين الناف بار والفوتر */
+}

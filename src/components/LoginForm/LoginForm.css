@@ -1,0 +1,69 @@
+/* Dark Form Container */
+.login-card {
+  background-color: #141414;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 420px;
+  width: 100%;
+}
+
+.login-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* Custom Inputs Styling */
+.movie-input {
+  background-color: #1f1f1f !important;
+  border: 1px solid #333 !important;
+  color: #ffffff !important;
+  font-size: 0.9rem;
+  padding: 0.65rem 0.9rem;
+  border-radius: 6px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.movie-input:focus {
+  border-color: #e50914 !important;
+  box-shadow: 0 0 0 0.2rem rgba(229, 9, 20, 0.25) !important;
+}
+
+.movie-input::placeholder {
+  color: #777;
+}
+
+.input-label {
+  color: #b3b3b3;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+/* Submit Button */
+.btn-submit-red {
+  background-color: #e50914;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-submit-red:hover {
+  background-color: #f40612;
+  color: #ffffff;
+}
+
+.signup-redirect-link {
+  color: #e50914;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-redirect-link:hover {
+  text-decoration: underline;
+}

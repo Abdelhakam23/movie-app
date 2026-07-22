@@ -1,0 +1,6 @@
+/* Login Page Background Fix */
+.login-page-wrapper {
+  background-color: #0f1117; 
+  min-height: calc(100vh - 120px); 
+}
+

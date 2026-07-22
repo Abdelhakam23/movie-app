@@ -1,0 +1,45 @@
+/* Home Page Container Fixes */
+.home-wrapper {
+  background-color: #0f1117;
+  min-height: 100vh;
+}
+
+/* Hero Title Section */
+.hero-section {
+  padding: 3rem 0 2rem;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+}
+
+.hero-title span {
+  background: linear-gradient(135deg, #e50914 0%, #ff5252 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  color: #a0a5b5;
+  font-size: 0.95rem;
+  max-width: 500px;
+}
+
+/* Category Badge Decorative Accent */
+.trending-accent {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(229, 9, 20, 0.12);
+  border: 1px solid rgba(229, 9, 20, 0.3);
+  color: #e50914;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.35rem 0.9rem;
+  border-radius: 20px;
+  margin-bottom: 0.8rem;
+}
