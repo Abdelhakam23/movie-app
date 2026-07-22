@@ -3,12 +3,25 @@ import './Navbar.css';
 import { Link } from 'react-router';
 
 export default function Navbar() {
+
+  const closeNavbar = () => {
+    const navbarCollapse = document.getElementById('movieNavbar');
+    if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+      if (window.bootstrap) {
+        const bsCollapse = window.bootstrap.Collapse.getInstance(navbarCollapse) || new window.bootstrap.Collapse(navbarCollapse);
+        bsCollapse.hide();
+      } else {
+        navbarCollapse.classList.remove('show');
+      }
+    }
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark movie-nav sticky-top">
       <div className="container">
         
         {/* Brand */}
-        <Link className="brand-logo d-flex align-items-center gap-2" to="/">
+        <Link className="brand-logo d-flex align-items-center gap-2" to="/" onClick={closeNavbar}>
           <i className="bi bi-play-btn-fill text-danger"></i>
           <span>CineScope</span>
         </Link>
@@ -19,6 +32,9 @@ export default function Navbar() {
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#movieNavbar"
+          aria-controls="movieNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -27,7 +43,7 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="movieNavbar">
           <ul className="navbar-nav me-auto ms-lg-4 gap-lg-3 my-2 my-lg-0">
             <li className="nav-item">
-              <Link className="nav-link nav-link-custom active d-flex align-items-center gap-1" to="/">
+              <Link className="nav-link nav-link-custom active d-flex align-items-center gap-1" to="/" onClick={closeNavbar}>
                 <i className="bi bi-house-door"></i> Home
               </Link>
             </li>
@@ -43,12 +59,12 @@ export default function Navbar() {
               </a>
               <ul className="dropdown-menu dropdown-menu-dark shadow border-secondary">
                 <li>
-                  <a className="dropdown-item py-2" href="#">
+                  <a className="dropdown-item py-2" href="#" onClick={closeNavbar}>
                     <i className="bi bi-film me-2 text-danger"></i> Movies
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item py-2" href="#">
+                  <a className="dropdown-item py-2" href="#" onClick={closeNavbar}>
                     <i className="bi bi-tv me-2 text-info"></i> TV Series
                   </a>
                 </li>
@@ -58,10 +74,10 @@ export default function Navbar() {
 
           {/* Auth */}
           <div className="d-flex align-items-center gap-3">
-            <Link to="/login" className="btn-login">
+            <Link to="/login" className="btn-login" onClick={closeNavbar}>
               Log In
             </Link>
-            <Link to="/signup" className="btn-signup">
+            <Link to="/signup" className="btn-signup" onClick={closeNavbar}>
               Sign Up
             </Link>
           </div>
