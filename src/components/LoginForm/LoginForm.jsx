@@ -42,7 +42,7 @@ export default function LoginForm() {
       {/* Header */}
       <div className="text-center mb-4">
         <h2 className="login-title mb-1">Welcome Back</h2>
-        <p className="text-secondary small">Log in to access your MovieApp account</p>
+        <p className="text-secondary small">Log in to access your CineScope account</p>
       </div>
 
       {/* Form UI Only */}

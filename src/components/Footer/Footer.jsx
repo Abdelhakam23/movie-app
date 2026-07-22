@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="col-lg-4 col-md-6">
             <a className="footer-brand d-flex align-items-center gap-2 mb-3" href="#">
               <i className="bi bi-play-btn-fill text-danger fs-4"></i>
-              <span>MovieApp</span>
+              <span>CineScope</span>
             </a>
             <p className="pe-lg-4 text-secondary small">
               Your ultimate destination for movies and TV series. Watch trailers, explore trending shows, and stay updated with cinema news.
@@ -67,7 +67,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="d-flex flex-column flex-sm-row align-items-center justify-content-between pt-3 small text-secondary">
-          <p className="mb-2 mb-sm-0">&copy; {new Date().getFullYear()} MovieApp. All rights reserved.</p>
+          <p className="mb-2 mb-sm-0">&copy; {new Date().getFullYear()} CineScope. All rights reserved.</p>
           <div className="d-flex gap-3">
             <a href="#" className="text-secondary text-decoration-none hover-white">Privacy Policy</a>
             <a href="#" className="text-secondary text-decoration-none hover-white">Terms of Service</a>

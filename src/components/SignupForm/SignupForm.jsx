@@ -52,7 +52,7 @@ export default function SignupForm() {
       {/* Header */}
       <div className="text-center mb-4">
         <h2 className="signup-title mb-1">Create Account</h2>
-        <p className="text-secondary small">Join MovieApp to stream your favorite movies</p>
+        <p className="text-secondary small">Join CineScope to stream your favorite movies</p>
       </div>
 
       {/* Form UI Only */}

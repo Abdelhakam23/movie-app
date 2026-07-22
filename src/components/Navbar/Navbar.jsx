@@ -10,7 +10,7 @@ export default function Navbar() {
         {/* Brand */}
         <Link className="brand-logo d-flex align-items-center gap-2" to="/">
           <i className="bi bi-play-btn-fill text-danger"></i>
-          <span>MovieApp</span>
+          <span>CineScope</span>
         </Link>
 
         {/* Toggle Button */}
